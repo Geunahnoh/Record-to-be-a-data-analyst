@@ -1,0 +1,13 @@
+studying excel
+
+what I studied:
+index match / left mid right / and, or / index / match / text join / concat / len / find / search / substitute / trim / lower, upper, proper / value / text
+
+question
+1.concat 과 text join의 차이점?
+2. find 와 search의 차이점은 대소문자가 같아야 되는거 / 안 같아도 되는거 (찾고자 하는 텍스트와 원본 텍스트가)
+
+
+what i learned
+value에 대한 부분이 조금 어려웠다
+text에 대한 부분도 꽤 tricky 했다
