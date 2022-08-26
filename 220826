@@ -1,0 +1,46 @@
+what I learned:
+
+1
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+
+SELECT * FROM Customers
+ORDER BY Country and CustomerName;
+
+이렇게 2개로 했을때 결과가 다르게 나온다... 헐?
+
+
+2
+Did you notice that we did not insert any number into the CustomerID field?
+The CustomerID column is an auto-increment field and will be generated automatically when a new record is inserted into the table.
+(from w3school)
+
+customer id를 굳이 추가하지 않아도 된는 것 알게 됨
+
+
+3
+Note: A NULL value is different from a zero value or a field that contains spaces. 
+A field with a NULL value is one that has been left blank during record creation!
+(from w3school)
+
+
+4
+operator 연산자
+
+
+5
+Always use IS NULL to look for NULL values.
+(from w3school)
+
+
+6
+Note: Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. 
+The WHERE clause specifies which record(s) that should be updated. 
+If you omit the WHERE clause, all records in the table will be updated!
+헉... 조심합세
+(from w3school)
+
+
+7
+And, or, not / order by / insert into / null values / update
+
