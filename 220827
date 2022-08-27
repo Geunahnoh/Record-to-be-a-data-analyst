@@ -1,0 +1,105 @@
+what I leanred:
+
+1
+select top / limit / fetch -> they are all different!!! wow how confusing haha
+
+
+2
+when you wanna see TOP 3 OR top 50 percent ->
+select top 3 * from customers;
+*don't forget to put '*'
+
+
+3
+like wildcard...
+The percent sign (%) represents zero, one, or multiple characters
+ The underscore sign (_) represents one, single character
+(from w3 school) 
+ so it means underscore sign doesn't represent zero...?
+ 
+ 
+ 4
+ not like <-> like
+ex.
+select * from Customers
+where ContactName not like 'a%';
+
+
+5
+Wildcard characters are used with the LIKE operator. 
+The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+(from w3 school)
+
+
+
+6
+The following SQL statement selects all customers with a City starting with "b", "s", or "p": (from w3 school)
+select * from Customers
+where City like '[bsp]%'; 
+
+difficult...!
+
+
+7
+The following SQL statement selects all customers with a City starting with "a", "b", or "c": (from w3)
+select * from Customers
+where City like '[a-c]%'; 
+
+I can say [abc]% but abc is a serial ? consistent? so I can just say a-c
+I guess...
+
+
+
+8
+when I wanna use !...
+select * from Customers
+where City like '[!bsp]%'; 
+
+or
+
+SELECT * FROM Customers
+WHERE City NOT LIKE '[bsp]%';
+
+-> please put ! in the []... got it?
+-> i can use 'not like' instead of using '!'
+
+
+9
+The IN operator is a shorthand for multiple OR conditions.
+(from w3) -> or can be used instead of 'in'
+
+
+
+
+10
+select * from customers
+where country in (select country from suppliers);
+
+next to 'in' I can put another select phrase... oh interesting-!
+
+
+11
+SELECT * FROM Products
+WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName;
+
+yay, using 'between and' for text 
+i could make the query-!
+
+
+
+12
+in 'between' date option-
+SELECT * FROM Orders
+WHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;
+
+or
+
+SELECT * FROM Orders
+WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
+
+-> we need '#' and 'always date needs 00 so if the date is 1st July, I need to put 0701
+-> year-month-day or month-day-year order
+
+
+
