@@ -1,0 +1,8 @@
+What I learned:
+1. self join is not easy to understand.
+
+2. I guessed other joins part will be difficult to catch up. But, when actually I started to study those, they were not.
+
+3. union operator asks to show only district values
+union all operator asks to show all the duplicate values
+
