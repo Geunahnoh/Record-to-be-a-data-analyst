@@ -1,0 +1,25 @@
+what i leanred:
+
+Multi-line Comments
+Multi-line comments start with /* and end with */.
+Any text between /* and */ will be ignored.
+
+SELECT 17 % 5;
+2
+
+=	
+Equal to
+
+IN	
+TRUE if the operand is equal to one of a list of expressions
+
+ex)
+SELECT * FROM Customers
+WHERE City IN ('Paris','London');
+런던, 파리에 있는 시티의 정보들만 추출
+
+select count(customerID), country 
+from customers
+group by country
+order by count(customerId) desc;
+여기서 desc를 빼면 customer id count한게 1부터 정렬된다.
