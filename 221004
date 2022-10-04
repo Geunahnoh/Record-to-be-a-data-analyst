@@ -1,0 +1,8 @@
+what i learned:
+
+BACKUP DATABASE databasename
+TO DISK = 'filepath'
+WITH DIFFERENTIAL;
+-> with 부분이 잘 이해가 안된다
+
+
